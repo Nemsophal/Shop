@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Gadget Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+    <a class="navbar-brand text-danger" href="#">Tech Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#cartModal">
+                    Cart <span class="badge badge-primary cart-item-count">0</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-image-container">
+        <img src="images/10%20accessories.png" alt="Hero Image 1" class="active">
+        <img src="images/05%20power.png" alt="Hero Image 2">
+        <img src="images/11%20computer%20part.png" alt="Hero Image 3">
+    </div>
+    <div class="hero-text">
+        <h1>Discover the Latest Tech</h1>
+        <p>Explore our wide range of innovative gadgets and electronics.</p>
+        <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+    </div>
+</section>
+
+<section id="products" class="container mt-5">
+    <h2>Featured Products</h2>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/01%20monitor.png" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Awesome Gadget 1</h5>
+                    <p class="card-text">$99.99</p>
+                    <button class="btn btn-success add-to-cart" data-id="1" data-name="Awesome Gadget 1" data-price="99.99" data-image="images/product1.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/02%20laptop.png" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Cool Device 2</h5>
+                    <p class="card-text">$149.50</p>
+                    <button class="btn btn-success add-to-cart" data-id="2" data-name="Cool Device 2" data-price="149.50" data-image="images/product2.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/03%20headphone.png" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Tech 3</h5>
+                    <p class="card-text">$199.00</p>
+                    <button class="btn btn-success add-to-cart" data-id="3" data-name="Smart Tech 3" data-price="199.00" data-image="images/product3.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/labtopdell.png" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Awesome Gadget 1</h5>
+                    <p class="card-text">$99.99</p>
+                    <button class="btn btn-success add-to-cart" data-id="1" data-name="Awesome Gadget 1" data-price="99.99" data-image="images/product1.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/powerbank.png" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Cool Device 2</h5>
+                    <p class="card-text">$149.50</p>
+                    <button class="btn btn-success add-to-cart" data-id="2" data-name="Cool Device 2" data-price="149.50" data-image="images/product2.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/keyboard.png" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Tech 3</h5>
+                    <p class="card-text">$199.00</p>
+                    <button class="btn btn-success add-to-cart" data-id="3" data-name="Smart Tech 3" data-price="199.00" data-image="images/product3.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/cablea.png" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Awesome Gadget 1</h5>
+                    <p class="card-text">$99.99</p>
+                    <button class="btn btn-success add-to-cart" data-id="1" data-name="Awesome Gadget 1" data-price="99.99" data-image="images/product1.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/06%20smartphone.png" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Cool Device 2</h5>
+                    <p class="card-text">$149.50</p>
+                    <button class="btn btn-success add-to-cart" data-id="2" data-name="Cool Device 2" data-price="149.50" data-image="images/product2.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card product-card">
+                <img src="images/08%20watch.png" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Tech 3</h5>
+                    <p class="card-text">$199.00</p>
+                    <button class="btn btn-success add-to-cart" data-id="3" data-name="Smart Tech 3" data-price="199.00" data-image="images/product3.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to our team.</p>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4 text-center">
+    <p>&copy; 2025 Tech Gadget Store. All rights reserved.</p>
+</footer>
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group cart-items">
+                </ul>
+                <div class="mt-3 text-right">
+                    <strong>Total: $<span class="cart-total">0.00</span></strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
+                <button type="button" class="btn btn-primary checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
